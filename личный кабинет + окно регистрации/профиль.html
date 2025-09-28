@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="профиль.css">
+    <title>Личный кабинет</title>
+    <style>
+      
+    </style>
+</head>
+<body>
+    <div class="stars-background">
+    <video autoplay muted loop id="myVideo">
+        <source src="large.mp4" type="video/mp4">
+    </video>
+</div>
+    <div class="profile-container">
+        <div class="avatar" id="userAvatar">
+            <!-- Аватар будет сгенерирован из первой буквы имени -->
+        </div>
+        
+        <div class="user-name" id="userName">
+            <!-- Имя пользователя будет подставлено через JS -->
+        </div>
+        
+        <div class="user-email" id="userEmail">
+            <!-- Email пользователя будет подставлен через JS -->
+        </div>
+        
+        <button class="logout-btn" id="logout()" onclick="logout()">Выйти</button>
+        
+        <div class="welcome-text">
+            Добро пожаловать в ваш личный кабинет!
+        </div>
+    </div>
+
+            
+
+    <script  src="профиль.js">
+        // Этот скрипт будет заполнять данные пользователя
+        // после перехода на эту страницу
+    </script>
+</body>
+</html>

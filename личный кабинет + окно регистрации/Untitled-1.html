@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="рег.css">
+    <title>Регистрация/Вход</title>
+    <style>
+        .container { max-width: 400px; margin: 50px auto; padding: 20px; }
+        .form { display: none; }
+        .active { display: block; }
+        button { margin: 5px; padding: 10px; }
+        .error { color: red; font-size: 14px; }
+    </style>
+</head>
+<div class="video-background">
+    <video autoplay muted loop id="myVideo">
+        <source src="large.mp4" type="video/mp4">
+    </video>
+</div>
+<body>
+                
+    <div class="container">
+        <div class="buttons">
+            <button onclick="showForm('register')">Регистрация</button>
+            <button onclick="showForm('login')">Вход</button>
+        </div>
+                
+        <form id="registerForm" class="form">
+            <h3>Регистрация</h3>
+            <input type="text" id="regName" placeholder="Имя" required>
+            <input type="email" id="regEmail" placeholder="Email" required>
+            <input type="password" id="regPassword" placeholder="Пароль" required>
+            <div id="registerError" class="error"></div>
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+
+        <form id="loginForm" class="form">
+            <h3>Вход</h3>
+            <input type="email" id="loginEmail" placeholder="Email" required>
+            <input type="password" id="loginPassword" placeholder="Пароль" required>
+            <div id="loginError" class="error"></div>
+            <button type="submit">Войти</button>
+        </form>
+    </div>
+ 
+    </div>
+    <script src="регистрация.js"></script>
+</body>
+</html>
